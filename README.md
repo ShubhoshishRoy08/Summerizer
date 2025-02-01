@@ -6,8 +6,7 @@ Welcome to QuickMeds, a React Native Expo project aimed at building a comprehens
 - [Setting Up React Expo Development Build](#Setting-Up-React-Expo-Development-Build)
 - [Google Cloud Platform (GCP) Setup](#Google-Cloud-Platform-(GCP)-Setup)
 - [Running the Application](#Running-the-Application)
-- [Contributing](#Contributing)
-- [License](#License)
+- [Future Plan](#Future-Plan)
 
 ## Prerequisites
 Follow the eas documentation to install the necessary dependencies , also the platform is a expo development build
