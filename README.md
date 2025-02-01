@@ -1,5 +1,5 @@
 # Quickmeds
-Quickmeds is a mobile application built using React Native and Expo, designed to provide users with a seamless experience it is a comprehensive Patient assistive application.
+Welcome to QuickMeds, a React Native Expo project aimed at building a comprehensive patient assistive application. This README provides instructions and important information for setting up and running the application during its initial development phase.
 
 ## Table of Contents
 - [Prerequisites](#Prerequisites)
@@ -10,12 +10,20 @@ Quickmeds is a mobile application built using React Native and Expo, designed to
 - [License](#License)
 
 ## Prerequisites
-Before setting up the project, ensure you have the following installed on your system:
-- [Node.js](https://nodejs.org/) (v14.x or later)
-- [npm](https://www.npmjs.com/) or [Yarn](https://yarnpkg.com/)
-- [Expo CLI](https://docs.expo.dev/get-started/installation/)
-- [EAS CLI](https://docs.expo.dev/build/setup/)
-- [Google Cloud SDK (for GCP setup)]()
+Follow the eas documentation to install the necessary dependencies , also the platform is a expo development build
+1. Install npx expo-cli: Ensure you have npx expo-cli installed. You can do this with:
+```bash
+npm install -g expo-cli
+```
+2. Login with EAS Credentials: Log in to your Expo account:
+```bash
+npx expo login
+```
+3. Build the Platform for Android: To generate an APK for the emulator or physical device, use the command:
+```bash
+npx expo run:android
+```
+After the build completes, download the APK and install it on your emulator or physical device.
 
 ## Setting Up React Expo Development Build
 Follow these steps to set up the React Expo development environment:
@@ -37,7 +45,6 @@ yarn install
 Create a `.env` file in each app directory and add the necessary environment variables. For example
 ```bash
 API_KEY=your_api_key_here
-GCP_PROJECT_ID=your_gcp_project_id
 ```
 
 ### 4. Start the Development Server
@@ -51,8 +58,8 @@ This will open a browser window with the Expo Dev Tools. You can run the app on 
 To set up GCP for the Quickmeds project, follow these steps:
 
 ### 1. Create a GCP Project:
-1. Go to the GCP Console.
-2. Create a new project and note down the Project ID.
+- Go to the GCP Console.
+- Create a new project and note down the Project ID.
 
 ### 2. Enable Required APIs:
 Enable the following APIs for your project:
@@ -63,18 +70,18 @@ Enable the following APIs for your project:
 Navigate to **APIs & Services > Library** and enable the required APIs.
 
 ### 3. Set Up Firebase:
-1. Go to the Firebase Console.
-2. Add a new project and link it to your GCP project.
-3. Configure Firebase Authentication, Firestore, and Storage as needed.
+- Add a new project and link it to your GCP project.
+- Go to the Firebase Console.
+- Configure Firebase Authentication, Firestore, and Storage as needed.
 
 ### 4. Configure Service Account:
-1. Navigate to **IAM & Admin > Service Accounts** in the GCP Console.
-2. Create a new service account and grant it the necessary permissions (e.g., **Cloud Storage Admin, Firestore Admin**).
-3. Generate a JSON key for the service account and download it.
+- Navigate to **IAM & Admin > Service Accounts** in the GCP Console.
+- Create a new service account and grant it the necessary permissions (e.g., **Cloud Storage Admin, Firestore Admin**).
+- Generate a JSON key for the service account and download it.
 
 ### 5. Add GCP Credentials to the Project:
-1. Place the downloaded JSON key in the `config` folder of your project.
-2. Update the `.env` file with the path to the JSON key:
+- Place the downloaded JSON key in the `config` folder of your project.
+- Update the `.env` file with the path to the JSON key:
 
    ```env
    GOOGLE_APPLICATION_CREDENTIALS=config/your-service-account-key.json
