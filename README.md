@@ -25,6 +25,7 @@ npx expo run:android
 ```
 After the build completes, download the APK and install it on your emulator or physical device.
 
+
 ## Setting Up React Expo Development Build
 Follow these steps to set up the React Expo development environment:
 
@@ -53,6 +54,7 @@ Run the Expo development server
 expo start
 ```
 This will open a browser window with the Expo Dev Tools. You can run the app on an emulator or a physical device using the Expo Go app.
+
 
 ## Google Cloud Platform (GCP) Setup
 To set up GCP for the Quickmeds project, follow these steps:
@@ -92,6 +94,7 @@ If your project uses Cloud Functions, deploy them using the Google Cloud SDK
 gcloud functions deploy your-function-name --runtime nodejs16 --trigger-http
 ```
 
+
 ## Running the Application
 Once the setup is complete, you can run the application using the following steps:
 ### 1. Start the Expo Development Server
@@ -104,3 +107,9 @@ expo start
 ### 3. Run on an Emulator
 - Use an Android Emulator or iOS Simulator to run the app.
 - Follow the instructions in the Expo Dev Tools to launch the app on the emulator.
+
+## Future Plans
+- Fully integrate live appointment booking with web interface.
+- Complete backend implementation for all features.
+- Upgrade to Firebase Blaze Plan for enhanced functionality.
+- Expand feature set to include push notifications and detailed analytics.
