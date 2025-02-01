@@ -84,3 +84,16 @@ If your project uses Cloud Functions, deploy them using the Google Cloud SDK
 ```bash
 gcloud functions deploy your-function-name --runtime nodejs16 --trigger-http
 ```
+
+## Running the Application
+Once the setup is complete, you can run the application using the following steps:
+### 1. Start the Expo Development Server
+```bash
+expo start
+```
+### 2. Run on a Physical Device
+- Install the Expo Go app on your Android or iOS device.
+- Scan the QR code displayed in the Expo Dev Tools to run the app on your device.
+### 3. Run on an Emulator
+- Use an Android Emulator or iOS Simulator to run the app.
+- Follow the instructions in the Expo Dev Tools to launch the app on the emulator.
