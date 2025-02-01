@@ -3,7 +3,7 @@ Welcome to QuickMeds, a React Native Expo project aimed at building a comprehens
 
 ## Table of Contents
 - [Prerequisites](#Prerequisites)
-- [Setting Up React Expo Development Build](#Setting Up React Expo Development Build)
+- [Setting Up React Expo Development Build](#Setting-Up-React-Expo-Development-Build)
 - [Google Cloud Platform (GCP) Setup](#Google Cloud Platform (GCP) Setup)
 - [Running the Application](#Running the Application)
 - [Contributing](#Contributing)
