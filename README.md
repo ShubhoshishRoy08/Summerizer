@@ -15,4 +15,13 @@ Before setting up the project, ensure you have the following installed on your s
 - [npm](https://www.npmjs.com/) or [Yarn](https://yarnpkg.com/)
 - [Expo CLI](https://docs.expo.dev/get-started/installation/)
 - [EAS CLI](https://docs.expo.dev/build/setup/)
-- [Google Cloud SDK](for GCP setup)
+- [Google Cloud SDK (for GCP setup)]()
+
+## Setting Up React Expo Development Build
+Follow these steps to set up the React Expo development environment:
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/kumareshbalaji48/Quickmeds.git
+cd Quickmeds
+```
