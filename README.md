@@ -48,3 +48,39 @@ expo start
 This will open a browser window with the Expo Dev Tools. You can run the app on an emulator or a physical device using the Expo Go app.
 
 ## Google Cloud Platform (GCP) Setup
+To set up GCP for the Quickmeds project, follow these steps:
+
+### 1. Create a GCP Project:
+1. Go to the GCP Console.
+2. Create a new project and note down the Project ID.
+
+### 2. Enable Required APIs:
+Enable the following APIs for your project:
+- Firebase API (if using Firebase services)
+- Cloud Storage API
+- Cloud Functions API
+
+Navigate to **APIs & Services > Library** and enable the required APIs.
+
+### 3. Set Up Firebase:
+1. Go to the Firebase Console.
+2. Add a new project and link it to your GCP project.
+3. Configure Firebase Authentication, Firestore, and Storage as needed.
+
+### 4. Configure Service Account:
+1. Navigate to **IAM & Admin > Service Accounts** in the GCP Console.
+2. Create a new service account and grant it the necessary permissions (e.g., **Cloud Storage Admin, Firestore Admin**).
+3. Generate a JSON key for the service account and download it.
+
+### 5. Add GCP Credentials to the Project:
+1. Place the downloaded JSON key in the `config` folder of your project.
+2. Update the `.env` file with the path to the JSON key:
+
+   ```env
+   GOOGLE_APPLICATION_CREDENTIALS=config/your-service-account-key.json
+
+### 6. Deploy Cloud Functions (if applicable)
+If your project uses Cloud Functions, deploy them using the Google Cloud SDK
+```bash
+gcloud functions deploy your-function-name --runtime nodejs16 --trigger-http
+```
