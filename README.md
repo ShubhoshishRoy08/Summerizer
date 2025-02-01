@@ -1,5 +1,5 @@
 # Quickmeds
-Quickmeds is a mobile application built using React Native and Expo, designed to provide users with a seamless experience
+Quickmeds is a mobile application built using React Native and Expo, designed to provide users with a seamless experience it is a comprehensive Patient assistive application.
 
 # Table of Contents
 - [Prerequisites](#Prerequisites)
@@ -8,3 +8,11 @@ Quickmeds is a mobile application built using React Native and Expo, designed to
 - [Running the Application](#Running the Application)
 - [Contributing](#Contributing)
 - [License](#License)
+
+# Prerequisites
+Before setting up the project, ensure you have the following installed on your system:
+- [Node.js](https://nodejs.org/) (v14.x or later)
+- [npm](https://www.npmjs.com/) or [Yarn](https://yarnpkg.com/)
+- [Expo CLI](https://docs.expo.dev/get-started/installation/)
+- [EAS CLI](https://docs.expo.dev/build/setup/)
+- [Google Cloud SDK](for GCP setup)
